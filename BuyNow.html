@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+		<title>
+			Bubble-Tech
+		</title>
+				<style>
+
+		form { width: 200px; }
+		label { float: left; width: 150px; }
+		input[type=text] { float: left; width: 250px; }
+		.clear { clear: both; height: 0; line-height: 0; }
+		.floatright { float: right; }
+
+</style>
+	
+	</head>
+	<body>
+	<div id="wrapper">
+		
+		
+		<br/>
+		<div class="header"><img src="bubble.png" alt="logo" height="100px" width="140px" align="left"><b> Welcome to Bubble-Tech ... </b> </div> <br/>
+			<br/>
+				<div class="menu"><b><a href="Home.html"><img src="home.png" alt="home icon" height="18" width="18">Home</a> &middot; <a href="BuyNow.html"><img src="trol.png" alt="trolley icon" height="18" width="18">BuyNow</a> &middot; <a href="Contact.html"><img src="mes.png" alt="Contact icon" height="18" width="18">ContactUs</a> &middot; <a href="About.html"><img src="i.png" alt="About icon" height="18" width="18">AboutUs</a></b> </div>
+			<button class='help'>
+			<img src="help_icon.jpg" alt="help icon" height="16" width="16">
+		</button>
+		<br/>
+			<form method="get" action="https://www.google.com/search" id="searchbar">
+			<input type="text" id="search" required placeholder="Enter a keyword">
+			<input type="submit" id="submit" value="Search"/>
+			</form>
+			
+<br><br><br><br><br>
+		<div id ="billing">
+			<form>
+			<h2>Billing: </h2>
+				<label for="firstname">Name:</label>        <input type="text" name="firstname" /><br/>
+				
+				<label for="surname">Surname:</label>   <input type="text" name="surname" /><br/>
+				
+				<label for="mobile">Mobile:</label>     <input type="text" name="mobile" /><br/>
+				
+				<label for="address">Address 1: </label>        <input type="text" name="address" /><br/>
+				
+				<label for="address">Address 2: </label>        <input type="text" name="address" /><br/>
+				
+				<label for="country">Country: </label>      <input type="text" name="Country" /><br/>
+				
+				<label for="Zip">Zip Code: </label>      <input type="text" name="Zip" /><br/>
+				
+				<label for="email">Email: </label>      <input type="text" name="email" /><br/><br>
+			<br><br/><br><br/><br/>
+					<br/><select><br/>
+					<option value="select"><br/><br/>select method of payment</option>
+					<option value="debit">debit card</option>
+					<option value="credit">credit card</option>
+					<option value="paypal">pay pal</option>
+					<br/></select><br/>
+					
+					<label for="neme on card">Name on card: </label> <input type="text" name="card name" /><br/>
+					<label for="neme on card">Card Number: </label> <input type="text" name="card number" /><br/>
+					<br class="clear"/>
+					<label for="Expiry date">Card Expiry Date:</label><input type="text"/><br/>
+					<br/>
+					<select>
+					<option value="1">Select Quantity of Products</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<select/><br/>
+					<input type="submit" onclick="return confirm('Would you like to submit and continue with the shipping option?')" />
+			</form>
+						
+						</div>
+	<div id = "shipping">
+
+		<form>
+		<br/><h2>Shipping:</h2>
+			<div id="shipToBilling">
+				<input id="shipOption1" name="shipOption" class="no-border" onclick="javascript:cmCreateManualLinkClickTag('/checkout.jsp?process=address','Ship to billing address'); bbw.swapContinue();" type="radio" value="1" checked="checked">
+				<label id="label-ship-option-usebill" for="shipOption1">Ship to billing address</label>
+			</div>
+			<br><br>
+			<div>
+				<input id="shipOption2" name="shipOption" class="no-border" onclick="javascript:cmCreateManualLinkClickTag('/checkout.jsp?process=address','Ship to another address'); bbw.swapContinue();" type="radio" value="2" onclick = shipping address>
+				<label id="label-ship-option-useship" for="shipOption2">Ship to another address</label>
+			</div>
+			<br/><br/>
+			<div>
+				<label for="firstname"> Name:</label>    <input type="text" name="firstname" /><br/>
+				<label for="surname"> Surname:</label>   <input type="text" name="surname" /><br/>
+				<label for="mobile"> Mobile:</label>     <input type="text" name="mobile" /><br/>
+				<label for="address"> Address 1: </label>  <input type="text" name="address" /><br/>
+				<label for="address"> Address 2 </label>        <input type="text" name="address" /><br/>
+				<label for="country"> Country: </label>      <input type="text" name="Country" /><br/><br>
+			</div>
+			<br><br><br/>
+<input type="submit" onclick="return confirm('Would you like to continue with the purchase?')" />
+</div></div>
+		</form>
+		
+<div id="bottom"><br/><br/><b>Copyright Bubble-Tech 2014</b><br/> <br> <b>Tel:1890 534791</b>
+	</div>
+	</body>
+<html>
